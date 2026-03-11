@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # 1. Настройка API (Вставь сюда свой ключ)
-GOOGLE_API_KEY = "AIzaSyDX0R0Jag60r-m5-4w8tzhhPq03VfAWBFo"
+GOOGLE_API_KEY = "YOUR_APIKEY"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Настройка страницы
@@ -43,4 +43,5 @@ if uploaded_file is not None:
                 st.error(f"Ошибка: {e}. Проверь API ключ!")
 
 # Инструкция по запуску внизу
+
 st.info("Чтобы запустить: напиши в терминале 'streamlit run app.py'")
